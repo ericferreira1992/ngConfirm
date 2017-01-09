@@ -51,6 +51,7 @@ Directives/Attrs		| Description
 ```javascript
     $scope.send = function(){
 		ngConfirm.confirm({
+			title: 'Confirmation',
 			msg: 'Are you sure?',
 			okBtn: 'Yes',
 			cancelBtn: 'No',
