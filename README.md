@@ -36,7 +36,7 @@ Directives/Attrs		| Description
 ```
 #### Controller (Service provider)
 ```javascript
-    $scope.send(){
+    $scope.send = function(){
 		ngConfirm.confirm('Are you sure',
 		function(){
 			alert('You clicked on the POSITIVE option');
