@@ -1,5 +1,5 @@
 /*!
- * ngConfirm v1.0.0
+ * ngConfirm v1.0.1
  * Copyright 2016 Eric Ferreira
  * Contato: ericferreira1992@gmail.com
  */
@@ -58,9 +58,17 @@
 
                 scope.inicializa = function () {
                     scope.modalShow = true;
-                    scope.msgConfirmacao = msg;
-                    scope.okBtnLabel = 'Sim';
-                    scope.cancelarBtnLabel = 'Não';
+
+                    if(typeof msg == 'object'){
+                        scope.msgConfirmacao = msg.msg != undefined ? msg.msg : 'Tem certeza que deseja prosseguir?';
+                        scope.okBtnLabel = msg.okBtn != undefined ? msg.okBtn : 'Sim';
+                        scope.cancelarBtnLabel = msg.cancelBtn != undefined ? msg.cancelBtn : 'Não';
+                    }
+                    else{
+                        scope.msgConfirmacao = msg;
+                        scope.okBtnLabel = 'Sim';
+                        scope.cancelarBtnLabel = 'Não';
+                    }
 
                     showConfirmacao(scope);
                 };

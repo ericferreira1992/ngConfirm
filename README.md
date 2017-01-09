@@ -30,14 +30,30 @@ Directives/Attrs		| Description
 ```
 
 ### Example usage
-#### HTML
+#### On HTML
 ```html
     <button ng-confirm="Are you sure?" ok-btn="Yes" cancel-btn="No" ng-click="send()">Send</button>
 ```
-#### Controller (Service provider)
+#### On Controller (First way)
 ```javascript
     $scope.send = function(){
 		ngConfirm.confirm('Are you sure',
+		function(){
+			alert('You clicked on the POSITIVE option');
+		},
+		function(){
+			alert('You clicked on the NEGATIVE option');
+		})
+	};
+```
+#### On Controller (Second way)
+```javascript
+    $scope.send = function(){
+		ngConfirm.confirm({
+			msg: 'Are you sure?',
+			okBtn: 'Yes',
+			cancelBtn: 'No',
+		},
 		function(){
 			alert('You clicked on the POSITIVE option');
 		},
