@@ -65,6 +65,6 @@ Directives/Attrs		| Description
 	};
 ```
 
-[Donate to help](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=ericferreira1992%40gmail%2ecom&lc=BR&item_name=Eric%20Github&currency_code=BRL&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted)
+:pray: [Donate to help](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=ericferreira1992%40gmail%2ecom&lc=BR&item_name=Eric%20Github&currency_code=BRL&bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted)
 
-[Send email to support](ericferreira1992@gmail.com)
+:email: [Send email to support](ericferreira1992@gmail.com)
