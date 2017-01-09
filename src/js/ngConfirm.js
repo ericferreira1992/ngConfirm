@@ -60,12 +60,14 @@
                     scope.modalShow = true;
 
                     if(typeof msg == 'object'){
+                        scope.titulo = msg.title != undefined ? msg.title : 'Confirmação';
                         scope.msgConfirmacao = msg.msg != undefined ? msg.msg : 'Tem certeza que deseja prosseguir?';
                         scope.okBtnLabel = msg.okBtn != undefined ? msg.okBtn : 'Sim';
                         scope.cancelarBtnLabel = msg.cancelBtn != undefined ? msg.cancelBtn : 'Não';
                     }
                     else{
                         scope.msgConfirmacao = msg;
+                        scope.titulo = 'Confirmação';
                         scope.okBtnLabel = 'Sim';
                         scope.cancelarBtnLabel = 'Não';
                     }
@@ -93,6 +95,7 @@
 
                 scope.inicializa = function () {
                     scope.modalShow = true;
+                    scope.titulo = attrs.title != undefined ? attrs.title : 'Confirmação';
                     scope.msgConfirmacao = attrs.ngConfirm != undefined ? attrs.ngConfirm : 'Tem certeza que deseja prosseguir?';
                     scope.okBtnLabel = attrs.okBtn != undefined ? attrs.okBtn : 'Sim';
                     scope.cancelarBtnLabel = attrs.cancelBtn != undefined ? attrs.cancelBtn : 'Não';

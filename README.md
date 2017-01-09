@@ -4,7 +4,7 @@ Confirmation box for AngularJs simply and easily.
 ---
 
 ### Result
-![alt tag](https://s24.postimg.org/c3fhbxhrp/confirm.jpg)
+![alt tag](https://s27.postimg.org/6li016643/confirm.jpg)
 
 ### Install (gitHub)
 ```
@@ -21,6 +21,7 @@ Directives/Attrs		| Description
 `ng-confirm`		    | Main directive. In it you will enter with the question that will be asked for the user responds.(ex .: ``` <button ng-confirm="Are you sure?" ng-click="send()"></button> ```).
 `ok-btn`(optional)      | Name for POSTIVE option (ex .: ``` <buton ng-confirm="Are you sure?" ok-btn="Yes"></button> ```).
 `cancel-btn`(optional)  | Name for NEGATIVE option (ex .: ``` <buton ng-confirm="Are you sure?" ok-btn="No"></button> ```).
+`title`(optional)  		| Name for the title of the confirmation box (ex .: ``` <buton ng-confirm="Are you sure?" title="Confirmation"></button> ```).
 
 ### Usage
 **Include in header your Html**:
