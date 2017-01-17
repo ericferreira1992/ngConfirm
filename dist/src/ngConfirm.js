@@ -1,5 +1,5 @@
 /*!
- * ngConfirm v1.0.1
+ * ngConfirm v1.0.2
  * Copyright 2016 Eric Ferreira
  * Contato: ericferreira1992@gmail.com
  */
@@ -14,7 +14,7 @@
                 '<div class="ng-confirm-geral" ng-class="{\'ng-confirm-in\': modalShow, \'ng-confirm-out\': !modalShow}" id="ng-confirm-1">'+
                     '<div class="ng-confirm-area">'+
                         '<div class="ng-confirm-container">'+
-                            '<header>Confirmação</header>'+
+                            '<header>{{titulo}}</header>'+
                             '<section>{{msgConfirmacao}}</section>'+
                             '<div>'+
                                 '<button ng-click="cancelarBtn()">{{cancelarBtnLabel}}</button>'+

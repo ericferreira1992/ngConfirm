@@ -1,5 +1,5 @@
 /*!
- * ngConfirm v1.0.0
+ * ngConfirm v1.0.2
  * Copyright 2016 Eric Ferreira
  * Contato: ericferreira1992@gmail.com
  */
@@ -31,6 +31,8 @@
 .ng-confirm-area{
     display: table-cell;
     vertical-align: middle;
+	padding: 15px;
+	box-sizing: border-box;
 }
 .ng-confirm-container{
     display: table;
@@ -40,7 +42,7 @@
     border-radius: 4px;
     box-shadow: 0 5px 10px rgba(0,0,0,.7);
     padding: 10px 15px 15px 15px;
-    min-width: 300px;
+    min-width: 200px;
     max-width: 600px;
     color: #444;
     font-family: inherit;
